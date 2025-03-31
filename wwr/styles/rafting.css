@@ -31,6 +31,34 @@ h1, h2 {
     font-family: "Winky sans", sans-serif;
 }
 
+header {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 50px;
+  align-items: center;
+  max-width: 1100px;
+  padding: 20px;
+}
+
+header img {
+    margin: 0 0.25rem 0 1rem;
+    width: 200px;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav li {
+    display: block;
+    padding: 5px 60px;
+    text-align: center;
+}
+
 .hero {
 	margin: 10px auto;
 	position: relative;
@@ -69,13 +97,46 @@ h1, h2 {
     float: right;
 }
 
+figure {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    max-width: 200px;
+    margin: auto;
+    float: left;
+}
+  
+figure img {
+    max-width: 200px;
+    max-height: 150px;
+}
+  
+figcaption {
+    display: block;
+    font: italic smaller sans-serif;
+    text-align: center;
+}
+
 section {
     position: relative;
 }
 
 footer {
-	position: relative;
-	bottom: 0;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    grid-gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+	position: block;
+	width: 100%;
+    clear: both;
+}
+
+footer p {
+    text-align: center;
 }
 
 .sociallinks {
