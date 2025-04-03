@@ -2,48 +2,61 @@
     --heading-background-color: #f5f5dc;
     --heading-text-color: #333;
     --heading-font: 'Montserrat', Ubuntu, sans-serif;
-    --padding: 1rem;
-    --border: 1px solid rgb (0 0 0 / 0.1);
-    --width: 100vw;
+    --width: 100%;
     --opacity: 0.5;
+    --primary-color: #1e90ff;
 }
 
 h1 {
     background-color: var(--heading-background-color);
     color: var(--heading-tex-color);
     font-family: var(--heading-font);
-    padding: var(--padding);
     width: var(--width);
     opacity: var(--opacity);
 }
 
 aside {
     margin: 10px auto;
-    padding:var(--padding);
     box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+    border-radius: 20px;
 }
 
 a {
     text-decoration: none;
 }
 
-h1, h2 {
+body {
+    font-family: "Winky sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
     font-family: "Winky sans", sans-serif;
 }
 
-header {
-  margin: 1rem auto;
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+}
+
+.header {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-gap: 50px;
+  grid-template-columns: 1fr auto;
+  grid-gap: 0px;
+  justify-items: start;
   align-items: center;
-  max-width: 1100px;
-  padding: 20px;
+  padding: 10px 20px;
+  background-color: #0099cc;
+  position: relative;
 }
 
 header img {
     margin: 0 0.25rem 0 1rem;
-    width: 150px;
+    width: 140px;
     height: auto;
 }
 
@@ -52,35 +65,63 @@ header img {
     list-style: none;
 }
 
-nav li {
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end
+}
+
+.navigation li {
     display: block;
     padding: 5px 60px;
     text-align: center;
 }
 
+.navigation a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1em;
+    padding: 8px 0px;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #555;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
 .hero {
+    position: relative;
 	margin: 10px auto;
-	position: relative;
+    text-align: center;
     clear: left;
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .hero h1 {
     position: absolute;
     text-align: center;
     font-size: 4rem;
-    top: 100px;
+    top: 30px;
     right:0px
 }
 
 .stats {
     position: absolute;
-    top: 300px;
+    top: 200px;
     right: 125px;
     width: 75vw;
     margin: 1rem auto;
@@ -94,15 +135,53 @@ nav li {
     width: 200px;
     height: auto;
     float: right;
+    border-radius: 8px;
+}
+
+.history-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+    top: 30px
+}
+
+.history-comment {
+    width: 3000px;
+    text-align: center;
+}
+
+.left-comment, .right-comment {
+    width: 3000px;
+}
+
+.history-image-container {
+    position: relative;
+    width: 1000px;
+}
+
+.history-heading {
+    position: absolute;
+    top: -75px;
+    right: 357%;
+    transform: translateX(-50%);
+}
+
+.history-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
 figure {
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 5px;
-    max-width: 200px;
+    max-width: 180px;
     margin: 25px;
     float: left;
 }
@@ -110,6 +189,7 @@ figure {
 figure img {
     max-width: 200px;
     max-height: 150px;
+    border-radius: 8px;
 }
   
 figcaption {
@@ -136,8 +216,25 @@ footer {
 
 footer p {
     text-align: center;
+    margin: 0;
 }
 
-.sociallinks {
-    width: 100%;
+footer .sosiallinks {
+    display: flex;
+    gap: 20px;
+}
+
+footer .sociallinks img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
