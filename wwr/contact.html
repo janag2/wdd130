@@ -23,37 +23,60 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="trips.html">Trips</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a class="active" href="contact.html">Contact Us</a></li>
           </ul>
         </nav>
       </header>
 
       <main>
-        <div>
+        <div class="tt">
           <h1>REACH OUR TEAM</h1>
-          <p>We love questions and feedback – and we're always happy to help! Here are some ways to contact us.</p>
+          <p>We love questions and feedback – and we're always happy to help!<br>Here are some ways to contact us.</p>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3970.8652777169277!2d-0.10329712603052506!3d5.586922033340089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMzUnMTIuOSJOIDDCsDA2JzAyLjYiVw!5e0!3m2!1sen!2sgh!4v1743827661291!5m2!1sen!2sgh" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div>
-          <table style="width:100%">
-            <tr>
-              <th>HEADQUARTERS</th>
-              <th>MAP</th>
-            </tr>
-            <tr>
-              <td>Accra, Ghana</td>
-            </tr>
-            <tr>
-              <td>177 Credd Ave <br> Site 1703</td>
-            </tr>
-            <tr>
-              <td>contact-us@company.com</td>
-            </tr>
-            <tr>
-              <td>+172802929</td>
-            </tr>
-          </table>
+          <article class="contact">
+            <h2>HEADQUARTERS</h2>
+            <p><a><img src="images/location.svg" alt="Location"></a>Accra, Ghana<br>177 Credd Ave<br>Site 1703</p>
+            <p><a><img src="images/mail.svg" alt="mail"></a><a href="mailto:contact-us@creddrafting.com">contact-us@creddrafting.com</a></p>
+            <p><a><img src="images/phone.svg" alt="Phone"></a><a href="call:+172802929">+172802929</a></p>
+          </article>
         </div>
+            
+        <section class="form">
+          <h3>Send Us a Messeage</h3>
+          <p>Send us a message and we'll respond within 24 hours.</p>
+          <form action="#" method="dialog"
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required><br><br>
+            
+            <label for="purpose">Purpose of Message:</label>
+            <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+            <label for="inquiry">General Inquiry</label>
+            <input type="radio" id="reeservation" name="purpose" value="Reservation Question">
+            <label for="reservation">Reservation Questions</label>
+            <input type="radio" id="suggestion" name="purpose" value="Websitee Suggestion">
+            <label for="suggestion">Website Suggestion</label><br><br>
+
+            <label for="message">Your Messege:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br>
+
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Please subscribe to our monthly newsletter</label><br>
+
+            <button type="submit">Send</button>
+          </form>
+        </section>
       </main>
 
       <footer>

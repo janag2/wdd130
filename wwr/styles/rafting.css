@@ -202,6 +202,35 @@ section {
     width: 100%;
 }
 
+.tt {
+    text-align: center;
+}
+
+.contact {
+    position: relative;
+    align-items: center;
+    justify-items: normal;
+    top: 90px;
+}
+
+.contact a img {
+    position: relative;
+    top: 5px;
+}
+
+.map {
+    float: right;
+}
+
+.form {
+    align-content: space-around;
+    align-items: center;
+    justify-items: center;
+    background-color:#f5f4fc;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
 footer {
     margin: 1rem auto;
     display: grid;
