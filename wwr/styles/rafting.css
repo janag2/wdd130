@@ -222,6 +222,11 @@ section {
     float: right;
 }
 
+.map iframe {
+    border: 0px;
+    border-radius: 5px;
+}
+
 .form {
     align-content: space-around;
     align-items: center;
