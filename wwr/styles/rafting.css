@@ -7,10 +7,9 @@
     --primary-color: #1e90ff;
 }
 
-h1 {
+.hero h1, .hiv h1, .tp h1 {
     background-color: var(--heading-background-color);
     color: var(--heading-tex-color);
-    font-family: var(--heading-font);
     width: var(--width);
     opacity: var(--opacity);
 }
@@ -97,6 +96,28 @@ main {
     padding: 20px;
 }
 
+.hiv {
+    position: relative;
+	margin: 10px auto;
+    text-align: center;
+    clear: left;
+}
+
+.hiv img {
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.hiv h1 {
+    position: absolute;
+    text-align: center;
+    font-size: 4rem;
+    top: 30px;
+    right:0px
+}
+
 .hero {
     position: relative;
 	margin: 10px auto;
@@ -144,7 +165,6 @@ main {
     justify-content: space-between;
     gap: 40px;
     position: relative;
-    top: 30px
 }
 
 .history-comment {
@@ -159,13 +179,6 @@ main {
 .history-image-container {
     position: relative;
     width: 1000px;
-}
-
-.history-heading {
-    position: absolute;
-    top: -75px;
-    right: 357%;
-    transform: translateX(-50%);
 }
 
 .history-image-container img {
@@ -202,11 +215,43 @@ section {
     width: 100%;
 }
 
+.tp {
+    text-align: center;
+}
+
+.tp1 img {
+    width: 400px;
+    height: auto;
+    float: right;
+    border-radius: 8px;
+}
+
+.tp2 img {
+    width: 400px;
+    height: auto;
+    float: left;
+    border-radius: 8px;
+}
+
+.tp1 p {
+    text-align: left;
+}
+
+tp2 p {
+    text-align: right;
+}
+
 .tt {
+    color: var(--heading-tex-color);
+    width: var(--width);
+    opacity: var(--opacity);
     text-align: center;
 }
 
 .contact {
+    color: var(--heading-tex-color);
+    width: var(--width);
+    opacity: 0.6;
     position: relative;
     align-items: center;
     justify-items: normal;
@@ -215,7 +260,7 @@ section {
 
 .contact a img {
     position: relative;
-    top: 5px;
+    top: 7px;
 }
 
 .map {
@@ -234,6 +279,7 @@ section {
     background-color:#f5f4fc;
     border-radius: 5px;
     max-width: 100%;
+    opacity: 0.7;
 }
 
 footer {
