@@ -233,7 +233,7 @@ section {
     border-radius: 8px;
 }
 
-.tp1 p {
+.tp1, .tp2 p {
     text-align: left;
 }
 
