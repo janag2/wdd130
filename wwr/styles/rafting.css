@@ -201,11 +201,11 @@ main {
 
 .letter {
     position: relative;
-    width: 25vw;
+    width: 20vw;
     text-align: left;
     display: flex;
     flex-flow: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 5px;
     margin: 25px;
     float: left;
@@ -271,11 +271,11 @@ section {
     width: 100%;
 }
 
-.tp h1{
+.tp h1, .tp3 h1{
     text-align: center;
 }
 
-.tp1 img {
+.tp1 img, .tp3 img {
     width: 400px;
     height: auto;
     float: right;
@@ -289,7 +289,7 @@ section {
     border-radius: 8px;
 }
 
-.tp1, .tp2 {
+.tp1, .tp2, .tp3 {
     text-align: left;
 }
 
