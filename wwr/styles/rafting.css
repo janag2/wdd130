@@ -324,6 +324,18 @@ section {
     border-radius: 5px;
 }
 
+.employee {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    max-width: 250px;
+    margin: 25px;
+    top: 50px;
+}
+
 .employee img {
     width: 100%;
     height: auto;
