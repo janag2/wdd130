@@ -194,25 +194,50 @@ main {
     border-radius: 5px;
 }
 
-.nletter {
-    border-bottom: 10px;
-    
+.ppa {
+    text-align: left;
 }
 
-.letter {
-    position: relative;
-    width: 20vw;
-    text-align: left;
+.ppa figure {
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
-    padding: 5px;
-    margin: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    width: auto;
+    margin: 50px;
     float: left;
 }
 
-.letter h3, h4, h5, h6 {
-    font-size: medium;
+.ppa figcaption {
+    display: block;
+    text-align: center;
+}
+
+.ppa figure img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 8px;
+}
+
+.tab {
+    position: relative;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    padding: auto;
+    margin: 25px;
+    float: left;
+    clear: both;
+}
+
+h3 {
+    border-spacing: 0px;
+}
+
+table{
+    border-spacing: 5px;
 } 
 
 .history-section {
@@ -331,9 +356,9 @@ section {
     justify-content: space-evenly;
     align-items: center;
     padding: 5px;
-    max-width: 250px;
     margin: 25px;
     top: 50px;
+    right: 50px;
 }
 
 .employee img {
