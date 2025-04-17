@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Contact Us - CREDD RAFTING</title>
+        <title>Contact Us ‖ CREDD RAFTING</title>
         <meta name="description" content="J's BYU-Idaho Whitewater Rafting">
         <meta name="author" content="Jesse Anaglate">
 
@@ -66,7 +66,7 @@
           </div>
         </section>
             
-        <section class="form">
+        <section class="contact-form">
           <h3>Send Us a Messeage</h3>
           <p>Send us a message and we'll respond within 24 hours.</p>
           <form action="#" method="post">
@@ -77,13 +77,15 @@
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" required><br><br>
             
-            <label for="message">Purpose of Message:</label>
-            <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
-            <label for="inquiry">General Inquiry</label>
-            <input type="radio" id="reeservation" name="purpose" value="Reservation Question">
-            <label for="message">Reservation Questions</label>
-            <input type="radio" id="suggestion" name="purpose" value="Websitee Suggestion">
-            <label for="suggestion">Website Suggestion</label><br><br>
+            <fieldset>
+              <legend for="message">Purpose of Message:</legend>
+              <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+              <label for="inquiry">General Inquiry</label>
+              <input type="radio" id="reeservation" name="purpose" value="Reservation Question">
+              <label for="message">Reservation Questions</label>
+              <input type="radio" id="suggestion" name="purpose" value="Websitee Suggestion">
+              <label for="suggestion">Website Suggestion</label><br><br>
+            </fieldset>
 
             <label for="message">Your Messege:</label><br>
             <textarea id="message" name="message" rows="5" placeholder="Enter text here." required></textarea><br>
@@ -91,7 +93,7 @@
             <input type="checkbox" id="subscribe" name="subscribe">
             <label for="subscribe">Please subscribe to the monthly newsletter</label><br>
 
-            <button type="submit">Send</button>
+            <button type="submit">Send</button><br><br>
           </form>
         </section>
       </main>
