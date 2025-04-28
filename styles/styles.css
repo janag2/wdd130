@@ -65,6 +65,11 @@ p {
     padding:0;
 }
 
+.info {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 aside h2 {
     position: absolute;
     top: 15px;
